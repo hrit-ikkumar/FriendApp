@@ -1,11 +1,13 @@
-package com.example.randomfriend;
-import java.util.*;
+package com.example.friendapp;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private Button mfrndBtn;
@@ -29,10 +31,9 @@ public class MainActivity extends AppCompatActivity {
     }
     void sendUsertoFrnd()
     {
-        Intent frnd = new Intent(MainActivity.this, frndActivity.class);
+        Intent frnd = new Intent(MainActivity.this, FriendActivity.class);
         frnd.putExtra("EXTRA", random_friend);
         startActivity(frnd);
         finish();
     }
-
 }

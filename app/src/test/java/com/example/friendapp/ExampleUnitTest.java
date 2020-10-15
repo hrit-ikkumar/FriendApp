@@ -1,4 +1,4 @@
-package com.example.randomfriend;
+package com.example.friendapp;
 
 import org.junit.Test;
 
